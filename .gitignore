@@ -1,0 +1,5 @@
+# only the docs are tracked; every binary stays local
+*
+!.gitignore
+!README.md
+!MANIFEST.md
