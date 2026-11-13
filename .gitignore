@@ -1,5 +1,8 @@
-# only the docs are tracked; every binary stays local
+# only docs and small test scripts are tracked; every binary stays local
 *
 !.gitignore
 !README.md
 !MANIFEST.md
+!tests/
+!tests/*.lc
+!tests/*_result.txt

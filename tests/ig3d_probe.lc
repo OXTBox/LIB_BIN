@@ -1,0 +1,15 @@
+<?lc
+set the defaultFolder to "//wsl$/Ubuntu/home/igame3d/projects/LIB_BIN/igame3d_last_working_Livecode_6_version"
+put "//wsl$/Ubuntu/home/igame3d/projects/LIB_BIN/igame3d_last_working_Livecode_6_version/zz_claude_ext_probe.livecode" into tProbe
+create stack "zz_claude_ext_probe"
+set the externals of stack "zz_claude_ext_probe" to "iGame3D Pro external.dll"
+set the fileName of stack "zz_claude_ext_probe" to tProbe
+save stack "zz_claude_ext_probe"
+delete stack "zz_claude_ext_probe"
+put "probe saved; loading it again..." & cr
+put the short name of stack tProbe into tName
+start using stack tName
+put "externals: [" & the externals of stack tName & "]" & cr
+put "externalCommands (" & the number of lines of the externalCommands of stack tName & "):" & cr & the externalCommands of stack tName & cr
+put "externalFunctions (" & the number of lines of the externalFunctions of stack tName & "):" & cr & the externalFunctions of stack tName & cr
+?>

@@ -1,0 +1,3 @@
+<?lc
+put "engine " & the version & " | platform " & the platform & " | processor " & the processor & cr
+?>

@@ -1,0 +1,25 @@
+<?lc
+set the defaultFolder to "//wsl$/Ubuntu/home/igame3d/projects/LIB_BIN/igame3d_last_working_Livecode_6_version"
+put the short name of stack "//wsl$/Ubuntu/home/igame3d/projects/LIB_BIN/igame3d_last_working_Livecode_6_version/zz_claude_ext_probe.livecode" into tName
+start using stack tName
+put "loaded: " & the number of lines of the externalCommands of stack tName & " commands" & cr
+try
+   ig3d_Init_s4i "//wsl$/Ubuntu/home/igame3d/projects/LIB_BIN/igame3d_last_working_Livecode_6_version/Data/", 40, 40, 360, 280
+   put "init: [" & the result & "]" & cr
+catch tErr
+   put "init failed: " & line 1 of tErr & cr
+end try
+try
+   put ig3d_ExecuteLua_s_i("print(6*7)") into tR
+   put "executeLua returned: [" & tR & "]" & cr
+   put ig3d_ExecuteLua_s_i("x = 6*7; print('iGame3D Lua says ' .. x .. ' at ' .. os.date())") into tR
+   put "lua output: [" & ig3d_GetLuaOutput__s() & "]" & cr
+catch tErr
+   put "lua failed: " & line 1 of tErr & cr
+end try
+try
+   put "window bounds: [" & ig3d_GetWindowBounds__4i() & "]" & cr
+catch tErr
+   put "bounds failed: " & line 1 of tErr & cr
+end try
+?>

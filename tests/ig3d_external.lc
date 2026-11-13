@@ -1,0 +1,18 @@
+<?lc
+set the defaultFolder to "//wsl$/Ubuntu/home/igame3d/projects/LIB_BIN/igame3d_last_working_Livecode_6_version"
+put "defaultFolder: " & the defaultFolder & cr
+put "//wsl$/Ubuntu/home/igame3d/projects/LIB_BIN/igame3d_last_working_Livecode_6_version/ig3d_UI_MAIN_11_13_2026_Livecode_7_only.livecode" into tPath
+lock messages
+put the short name of stack tPath into tName
+put "stack: " & tName & cr
+put "externals property: [" & the externals of stack tName & "]" & cr
+try
+   start using stack tName
+   put "start using: ok" & cr
+catch tErr
+   put "start using failed: " & line 1 of tErr & cr
+end try
+put "externalCommands: " & the number of lines of the externalCommands of stack tName & " -> " & line 1 to 15 of the externalCommands of stack tName & cr
+put "externalFunctions: " & the number of lines of the externalFunctions of stack tName & " -> " & line 1 to 15 of the externalFunctions of stack tName & cr
+unlock messages
+?>
