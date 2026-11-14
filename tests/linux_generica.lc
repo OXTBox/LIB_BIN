@@ -1,0 +1,8 @@
+<?lc
+put "xTalk on Linux:" && the version && the platform & cr
+put "sum:" && (6 * 7) & cr
+start using stack "/home/igame3d/projects/LIB_GENERICA/livecode/lib_generica.livecodescript"
+Gen.Load "/home/igame3d/projects/LIB_GENERICA/sets", "genetic_anomaly", "generic_array_data"
+put "ranks:" && Gen.List("game_rank_labels") & cr
+put "lists:" && the number of lines of Gen.Lists() & cr
+?>
