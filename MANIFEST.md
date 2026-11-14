@@ -5,6 +5,7 @@
 | LiveCode Community Server | 7.1.4 | Windows 32-bit (runs from WSL) | `livecode-server/7.1.4-win-x86/` | `Installers/LiveCodeCommunityServer-7_1_4-Windows.zip` | GPLv3 (Community) | 8e4ffd1256b283aabf77cb8444b4e78b6474a1d367c1dd0d4ff979fc982d20d7 | 2026-11-13 |
 | LiveCode Community Server | 9.6.3 | Windows x86_64 (runs from WSL) | `livecode-server/9.6.3-win-x64/` | `Installers/LiveCodeCommunityServer-9_6_3-Windows-x86_64.zip` | GPLv3 (Community) | 78fb1ab0ad695d0111733e2d38c3be952fca12dcfbfd2e6a1870aa45073e10bb | 2026-11-13 |
 | LiveCode Community Server | 9.6.3 | **Linux x86_64 (native in WSL)** | `livecode-server/9.6.3-linux-x64/` | `Installers/LiveCodeCommunityServer-9_6_3-Linux-x86_64.zip` | GPLv3 (Community) | e7f92cf82074b69349307c1b904014d3949284546659ce72fb032972d99dcb76 | 2026-11-13 |
+| UPBGE (Blender game engine) | 0.50 (Blender 5.0.1) | Windows x64: runs only from a Windows drive | `C:\LIB_BIN\upbge-0.50\` | `Installers/upbge-0.50-windows-x64.7z` | GPL | c59198cbe361afa9d78f515751d2a34f3df236f137393111fd8cc4b43e1dce71 | 2026-11-13 |
 | iGame3D Pro external + its DLLs, Player, Data | 2007 (051707) | Windows 32-bit | `igame3d_last_working_Livecode_6_version/` | the owner's archive | the owner's own (iGame3D); Newton, OpenAL, Ogg Vorbis, Lua: their own licences | - | 2026-11-13 |
 
 ## Use
