@@ -9,3 +9,7 @@ tools), kept in one place. **Internal only: never published.**
 - Tools find this folder through `$LIB_BIN` (default `~/projects/LIB_BIN`), never a hard-coded path.
 - Add a tool: unpack it into its versioned folder, then add its row to `MANIFEST.md`
   (`sha256sum` of the archive you installed from).
+
+## Licence
+
+GPL-3.0 (see `LICENSE`), because the xTalk work here is built on the GPL-licensed LiveCode Community 9 engine. Copyright (c) 2026 xAction.
